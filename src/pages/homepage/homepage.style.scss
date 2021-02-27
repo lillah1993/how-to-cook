@@ -1,0 +1,15 @@
+.homepage {
+   max-width: 120rem;
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-rows: 10rem minmax(100rem , auto);
+   grid-template-areas: "head head head"
+                        "list recipe gredients";
+   box-shadow: 4px 4px 10px gray;
+   border: 0.5px solid orangered;
+   border-radius: 1rem;
+   margin: 4vw auto;
+   // min-height: calc(100vh -2 * 4vw);
+   background-color: white;
+   overflow: hidden;
+}

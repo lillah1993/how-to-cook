@@ -1,10 +1,27 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0; 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; 
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: "Nunito Sans" sans-serif;
+  font-weight: 400;
+  background-image: linear-gradient(to right bottom, #F8D889, #F48982);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: calc(100vh -2 * 4vw);;
 }
 
 code {
