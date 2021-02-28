@@ -1,0 +1,28 @@
+
+.list {
+    grid-area: list;
+    background-color:  honeydew;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .recepies {
+        height: 80%;
+        display: grid;
+        grid-template-columns: 11.5rem 1fr;
+        grid-column-gap: 1.6rem;
+        .img {
+
+        
+        }
+
+        .info {
+        }
+
+
+       
+    }
+    .pages {
+       
+    }
+}
