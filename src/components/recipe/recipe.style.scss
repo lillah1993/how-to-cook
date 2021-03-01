@@ -1,0 +1,27 @@
+.recipe {
+    grid-area: recipe;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 235, 235);
+
+    .recipe-img {
+        width: 105%;
+        align-self: center;
+        height: 31rem;
+
+
+    }
+
+    .instractions {
+        padding: 9rem 2.5rem 3.5rem 2.5rem;
+
+    }
+
+    .gradients {
+        padding: 5rem;
+    }
+
+    .go-to {
+        padding: 5rem;
+    }
+}

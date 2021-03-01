@@ -36,19 +36,15 @@
         
         
 
-        //transform: translateY(3px);
-        //background-color: sandybrown;
+        
         &:active {
             transform: translateY(1px)
         }
        
         .glass {
-            // transform: translateX(4px);
             fill: white;
             
-            // &:active {
-            //     transform: translateX(1px);
-            // }
+            
         }
        
     }

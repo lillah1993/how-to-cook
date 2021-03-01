@@ -3,9 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    // border-bottom: .5px solid orangered;
    
-    background-color: rgb(238, 235, 235);;
+    background-color: rgb(238, 235, 235);
     .main-logo {
         display: flex;
         align-items: center;
@@ -39,20 +38,7 @@
     
         
     }
-    // // .icon {
-    // //     background-image: blanchedalmond;
-    // //     background-clip: text;
-    //     .heart {
-    //         width: 4rem;
-    //         height: 4rem;
-    //         display: flex;
-    //         align-items: center;
-    //         justify-content: center;
-    //         fill:rgba(238, 148, 88, 0.685);
-    //         cursor: pointer;
-    //     }
-    
-    // }
+   
     .heart {
         width: 2.5rem;
         height: 3.5rem;
@@ -61,6 +47,7 @@
         justify-content: center;
         fill: #F48982;
         cursor: pointer;
+        
         &:hover {
             transform: scale(1.5);
         }
