@@ -1,8 +1,8 @@
 import React from 'react';
 import Search from '../search/search.component';
 import './header.style.scss';
-import {ReactComponent as Logo } from '../../img/SVG/spoon-knife.svg'
-import {ReactComponent as Like } from '../../img/SVG/heart.svg'
+import {ReactComponent as Logo } from '../../img/SVG/spoon-knife.svg';
+import {ReactComponent as Like } from '../../img/SVG/heart.svg';
 
 
 

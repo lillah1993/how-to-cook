@@ -7,16 +7,30 @@ import List from '../../components/list/list.component';
 import Shopping from '../../components/shopping-ls/shopping-ls.component';
 import Recipe from '../../components/recipe/recipe.component';
 
+import { connect } from 'react-redux';
 
 
 
-const HomePage = () => (
+
+const HomePage = ({currentList,currentRecipe,currentShopList}) => (
     <div className='homepage'>
         <Header/>
-        <List />
-        <Recipe />
-        <Shopping />
+        <List list={currentList}/>
+        { currentRecipe?
+            <Recipe recipe={currentRecipe}/>
+          :null
+        }
+        {
+            <Shopping shoplist={currentShopList}/>
+        }
+        
     </div>
 );
 
-export default HomePage;
+const mapStateToProps = state => ({
+    currentList: state.list.currentList,
+    currentRecipe: state.recipe.currentRecipe,
+    currentShopList: state.shoplist.currentShopList
+});
+
+export default connect(mapStateToProps)(HomePage);

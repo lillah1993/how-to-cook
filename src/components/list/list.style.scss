@@ -8,17 +8,9 @@
 
     .recepies {
         height: 80%;
-        display: grid;
-        grid-template-columns: 11.5rem 1fr;
-        grid-column-gap: 1.6rem;
-        .img {
-
-            
-        
-        }
-
-        .info {
-        }
+        display: flex;
+        flex-direction: column;
+        justify-items: space-between;
 
 
        
