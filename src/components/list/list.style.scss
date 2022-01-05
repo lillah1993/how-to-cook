@@ -16,6 +16,19 @@
        
     }
     .pages {
+        display: flex;
+        justify-content: space-around;
+
+        .previous,
+        .next {
+            padding: 5rem;
+            background-image: linear-gradient(to right bottom, #F8D889, #F48982);
+            cursor: pointer;
+            border-radius: 100px;
+            padding: 1rem 2rem;
+        }
+
+        
        
     }
 }

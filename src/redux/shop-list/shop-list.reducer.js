@@ -1,5 +1,6 @@
 const INITIAL_STATE = {
-    currentShopList : []
+    currentShopList : [],
+    
 };
 
 const shopListReducer = (state=INITIAL_STATE,action) => {
@@ -9,6 +10,7 @@ const shopListReducer = (state=INITIAL_STATE,action) => {
                 ...state,
                 currentShopList: action.payload
             }
+        
         default:
             return state;
     }
