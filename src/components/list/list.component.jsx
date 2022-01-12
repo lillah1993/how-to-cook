@@ -36,6 +36,8 @@ const List = ({
   //       );
 
   //   };
+  // const dispatch = useDispatch();
+  // dispatch(setElementId(key));
 
   useEffect(() => {
     const handlClick = () => {
@@ -79,9 +81,9 @@ const List = ({
     <div className="list">
       <div className="recepies">
         {list
-          ? list.map(({ recipe }) => (
-              <ListElement key={uuidv4()} recipe={recipe} />
-            ))
+          ? list
+              .map(({ recipe }) => ({ ...recipe, id: uuidv4() }))
+              .map((recipe) => <ListElement key={recipe.id} recipe={recipe} />)
           : null}
       </div>
       <div className="pages">{list ? buttons : null}</div>

@@ -2,7 +2,7 @@ const INITIAL_STATE = {
   currentList: null,
   currentPage: 1,
   more: null,
-  ready: false,
+  elementid: null,
 };
 
 const listReducer = (state = INITIAL_STATE, action) => {
@@ -16,24 +16,23 @@ const listReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         currentPage: state.currentPage + 1,
-        ready: !state.ready,
       };
     case "GO_BACK":
       return {
         ...state,
         currentPage: state.currentPage - 1,
-        ready: !state.ready,
       };
     case "SET_NEXTPAGE_STATE":
       return {
         ...state,
         more: action.payload,
       };
-    case "TOGGE_READY":
+    case "SET_ELEMENT_ID":
       return {
         ...state,
-        ready: !state.ready,
+        elementid: action.payload,
       };
+
     default:
       return state;
   }

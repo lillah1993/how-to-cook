@@ -15,7 +15,7 @@ export const setNextPageState = (more) => ({
   type: "SET_NEXTPAGE_STATE",
   payload: more,
 });
-
-export const isReady = () => ({
-  type: "TOGGLE_READY",
+export const setElementId = (id) => ({
+  type: "SET_ELEMENT_ID",
+  payload: id,
 });
