@@ -16,7 +16,6 @@ const Header = () => {
     <div className="header">
       <div className="main-logo">
         <div className="spoon-knife">
-          {/* <span> HOW-TO-COOK </span> */}
           <Logo className="logo" />
         </div>
         <span>HOW-TO-COOK</span>
@@ -27,7 +26,7 @@ const Header = () => {
             <Like className='heart'/>
         </div> */}
       <Like className="heart" onClick={() => dispatch(toggleCart())} />
-      {hidden ? null : <CartDropDown />}
+      {hidden && <CartDropDown />}
     </div>
   );
 };

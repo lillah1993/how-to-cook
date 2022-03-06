@@ -1,30 +1,30 @@
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit; 
+  box-sizing: inherit;
 }
-
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; 
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Nunito Sans" sans-serif;
   font-weight: 400;
-  background-image: linear-gradient(to right bottom, #F8D889, #F48982);
+  background-image: linear-gradient(to right bottom, #f8d889, #f48982);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: calc(100vh -2 * 4vw);;
+  min-height: 100vh;
+  /* min-height: calc(100vh -2 * 4vw); */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

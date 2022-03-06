@@ -19,12 +19,7 @@ const Recipe = ({ recipe, setCurrentShopList }) => {
             ))
           : null}
       </div>
-      <div
-        className="go-to"
-        onClick={() => {
-          setCurrentShopList(recipe);
-        }}
-      >
+      <div className="go-to" onClick={() => setCurrentShopList(recipe)}>
         take it to shop
       </div>
     </div>

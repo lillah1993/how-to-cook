@@ -8,10 +8,10 @@ import {
 } from "../../redux/list/list.actions";
 import { setQuery } from "../../redux/search/search.actions";
 import { setCurrentList } from "../../redux/list/list.actions";
-import ListElement from "../list-element.component";
 import getData from "../search/fetchContent";
 import "./list.style.scss";
 import { useEffect } from "react";
+import ListElement from "../list-element/list-element.component";
 
 const List = ({
   list,

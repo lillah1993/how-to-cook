@@ -1,0 +1,46 @@
+.favorititem {
+  display: flex;
+
+  // margin-left: -5rem;
+  justify-content: first baseline;
+  align-items: center;
+
+  .img-box {
+    width: 23%;
+    height: 15rem;
+
+    img {
+      width: 95%;
+      height: 95%;
+      margin-left: -5rem;
+    }
+  }
+
+  .quantity,
+  .calories,
+  .discription,
+  .fav-info {
+    display: flex;
+    // justify-content: first baseline;
+    margin-left: 0.5rem;
+    width: 23%;
+  }
+  .remove {
+    display: flex;
+    cursor: pointer;
+  }
+  .quantity {
+    display: flex;
+    transform: translateY(-2px);
+    span {
+      transform: translateY(2px);
+      padding: 0 5px;
+    }
+  }
+
+  // .quantity,
+  // .calories,
+  // .discription {
+  //   width: 23%;
+  // }
+}

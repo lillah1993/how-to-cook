@@ -1,9 +1,9 @@
 import React from "react";
 import "./list-element.component.scss";
 import { connect, useDispatch } from "react-redux";
-import { setCurrentRecipe } from "../redux/recipe/recipe.actions";
-import { setCurrentShopList } from "../redux/shop-list/shop-list.actions";
-import { setElementId } from "../redux/list/list.actions";
+import { setCurrentRecipe } from "../../redux/recipe/recipe.actions";
+import { setCurrentShopList } from "../../redux/shop-list/shop-list.actions";
+import { setElementId } from "../../redux/list/list.actions";
 
 const ListElement = ({ recipe, setCurrentRecipe, setCurrentShopList }) => {
   const { image, label, id } = recipe;

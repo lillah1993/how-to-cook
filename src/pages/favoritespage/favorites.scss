@@ -1,0 +1,38 @@
+.favoritespage {
+  display: grid;
+  box-shadow: 4px 4px 10px gray;
+  // border: 0.5px solid orangered;
+  // border-radius: 1rem;
+  // margin: 4vw auto;
+  background-color: white;
+  overflow: hidden;
+  margin-bottom: 0rem;
+  min-height: 100vh;
+
+  .table {
+    margin: 10rem 20rem;
+    overflow: scroll;
+    .tablehead {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem;
+      margin-bottom: 1.5rem;
+
+      .header-type {
+        width: 23%;
+        &:last-child {
+          width: 8%;
+        }
+      }
+    }
+    .total {
+      display: flex;
+      width: 100%;
+      span {
+        margin-left: auto;
+        margin-top: 3rem;
+        font-size: large;
+      }
+    }
+  }
+}
