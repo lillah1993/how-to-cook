@@ -1,7 +1,7 @@
 export const addItem = (cartitems, item) => {
   const existantitem = cartitems.find((el) => el.id === item.id);
   if (existantitem) {
-    console.log("enter");
+    // console.log("enter");
     return cartitems.map((cartitem) => {
       let x;
       if (cartitem.id === existantitem.id) {
@@ -9,10 +9,8 @@ export const addItem = (cartitems, item) => {
         x = {
           ...cartitem,
           quantity: cartitem.quantity + 1,
-          calories: cartitem.calories * cartitem.quantity,
+          // calories: cartitem.calories * cartitem.quantity,
         };
-
-        console.log("x", x);
       } else {
         x = cartitem;
       }

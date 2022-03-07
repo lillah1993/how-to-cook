@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
 import "./favorite-item.scss";
 import { ReactComponent as Remove } from "../../img/SVG/cross.svg";
 import {
@@ -22,9 +22,9 @@ const FavoriteItem = ({ item }) => {
   // const {
   //   cartdropdown: { upcalories },
   // } = useSelector((state) => state);
-  useEffect(() => {
-    dispatch(updatTotalCalories());
-  }, [quantity, dispatch]);
+  // useEffect(() => {
+  //   dispatch(updatTotalCalories());
+  // }, [quantity, dispatch]);
   // const {
   //   cartdropdown: { updcalories },
   // } = useSelector((state) => state);
@@ -45,19 +45,31 @@ const FavoriteItem = ({ item }) => {
       <div className="quantity">
         <Minus
           className="minus"
-          onClick={() => dispatch(removeItemFromCart(item))}
+          onClick={() => {
+            dispatch(removeItemFromCart(item));
+            dispatch(updatTotalCalories());
+          }}
         />
         <span>{quantity}</span>
-        <Plus className="plus" onClick={() => dispatch(addItemToCart(item))} />
+        <Plus
+          className="plus"
+          onClick={() => {
+            dispatch(addItemToCart(item));
+            dispatch(updatTotalCalories());
+          }}
+        />
       </div>
       {calories ? (
-        <div className="calories">{calories?.toFixed(2)}</div>
+        <div className="calories">{(calories * quantity).toFixed(2)}</div>
       ) : (
         <div className="calories">unknown</div>
       )}
       <Remove
         className="remove"
-        onClick={() => dispatch(clearAnItem(item.id))}
+        onClick={() => {
+          dispatch(clearAnItem(id));
+          dispatch(updatTotalCalories());
+        }}
       />
     </div>
   );

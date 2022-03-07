@@ -1,7 +1,7 @@
 import { addItem, removeItem } from "./cart-dropdown.utils";
 
 const INITIAL_STATE = {
-  hidden: true,
+  hidden: false,
   cartitems: [],
   totalcalories: 0,
 };
